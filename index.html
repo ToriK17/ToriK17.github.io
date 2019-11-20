@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- Title -->
-    <title>Consulting | Unify - Responsive Website Template</title>
+    <title>Tori Kafati | Portfolio Website</title>
 
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
 
     <!-- Google Fonts -->
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|PT+Sans|Merriweather">
@@ -19,6 +19,12 @@
     <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="assets/vendor/icon-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/offcanvas.css">
+
+    <!-- CSS Unify -->
+    <link rel="stylesheet" href="assets/css/unify-core.css">
+    <link rel="stylesheet" href="assets/css/unify-components.css">
+    <link rel="stylesheet" href="assets/css/unify-globals.css">
 
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="assets/vendor/icon-awesome/css/font-awesome.min.css">
@@ -48,63 +54,62 @@
   <body id="home-section">
     <main>
       <!-- Header -->
-      <header id="js-header" class="u-header u-header--sticky-top u-header--change-appearance u-header--change-logo"
-              data-header-fix-moment="0">
-        <div class="u-header__section g-bg-black-opacity-0_2 g-transition-0_3 g-py-7 g-py-23--md"
-             data-header-fix-moment-exclude="g-bg-black-opacity-0_5 g-py-23--md"
-             data-header-fix-moment-classes="u-shadow-v19 g-bg-white g-py-15--md">
-          <nav class="navbar navbar-expand-lg g-py-0">
-            <div class="container g-pos-rel">
+      <header id="js-header" class="u-header u-header--sticky-top u-header--toggle-section u-header--change-appearance" data-header-fix-moment="300">
+        <div class="u-header__section u-header__section--light g-bg-white-opacity-0_7 g-transition-0_3 g-py-10" data-header-fix-moment-exclude="g-py-10" data-header-fix-moment-classes="u-shadow-v18 g-py-0">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <!-- Responsive Toggle Button -->
+              <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                <span class="hamburger hamburger--slider">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+                </span>
+              </button>
+              <!-- End Responsive Toggle Button -->
+
               <!-- Logo -->
-              <a href="#" class="js-go-to navbar-brand u-header__logo"
-                 data-type="static">
-                <img class="u-header__logo-img u-header__logo-img--main g-width-90" src="assets/img/logo.png" alt="Image description">
-                <img class="u-header__logo-img g-width-90" src="assets/img/logo-dark.png" alt="Image description">
+              <a href="/index.html" class="navbar-brand">
+                <img src="/assets/img/logo/logo-1.png" alt="Image Description">
               </a>
               <!-- End Logo -->
 
               <!-- Navigation -->
-              <div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar" data-mobile-scroll-hide="true">
-                <ul id="js-scroll-nav" class="navbar-nav text-uppercase g-letter-spacing-1 g-font-size-12 g-pt-20 g-pt-0--lg ml-auto">
-                  <li class="nav-item g-mr-15--lg g-mb-7 g-mb-0--lg">
-                    <a href="#home-section" class="nav-link p-0">Home <span class="sr-only">(current)</span></a>
+              <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
+                <ul class="navbar-nav text-uppercase g-font-weight-600 ml-auto">
+                  <li class="nav-item g-mx-20--lg">
+                    <a href="#" class="nav-link px-0">Home
+                  
+                </a>
                   </li>
-                  <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                    <a href="#about-section" class="nav-link p-0">About</a>
+                  <li class="nav-item g-mx-20--lg">
+                    <a href="#" class="nav-link px-0">Features
+                  
+                </a>
                   </li>
-                  <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                    <a href="#services-section" class="nav-link p-0">Services</a>
+                  <li class="nav-item g-mx-20--lg active">
+                    <a href="#" class="nav-link px-0">Shortcodes
+                  <span class="sr-only">(current)</span>
+                </a>
                   </li>
-                  <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                    <a href="#news-section" class="nav-link p-0">News</a>
+                  <li class="nav-item g-mx-20--lg">
+                    <a href="#" class="nav-link px-0">Pages
+                  
+                </a>
                   </li>
-                  <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                    <a href="#portfolio-section" class="nav-link p-0">Portfolio</a>
+                  <li class="nav-item g-mx-20--lg">
+                    <a href="#" class="nav-link px-0">Demos
+                  
+                </a>
                   </li>
-                  <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                    <a href="#contact-section" class="nav-link p-0">Contact</a>
-                  </li>
-                  <li class="nav-item g-ml-15--lg">
-                    <a href="index.html" class="nav-link p-0">Main</a>
+                  <li class="nav-item g-ml-20--lg g-mr-0--lg">
+                    <a href="#" class="nav-link px-0">What's New
+                  
+                </a>
                   </li>
                 </ul>
               </div>
               <!-- End Navigation -->
-
-              <!-- Responsive Toggle Button -->
-              <button class="navbar-toggler btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" type="button"
-                      aria-label="Toggle navigation"
-                      aria-expanded="false"
-                      aria-controls="navBar"
-                      data-toggle="collapse"
-                      data-target="#navBar">
-                <span class="hamburger hamburger--slider">
-                  <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                  </span>
-                </span>
-              </button>
-              <!-- End Responsive Toggle Button -->
             </div>
           </nav>
         </div>
@@ -167,7 +172,7 @@
 
                      style="z-index: 6; white-space: nowrap; color: rgba(255, 255, 255, 1.00);border-top: 2px solid #fff; border-bottom: 2px solid #fff;">
                      <i class="g-hidden-sm-down g-font-size-20 g-pos-rel g-top-minus-5 mr-2 icon-media-119 u-line-icon-pro"></i>
-                     WE ARE UNIFY CREATIVE TECHNOLOGY COMPANY
+                     Developer | Entrepreneur | Creative
                      <i class="g-hidden-sm-down g-font-size-20 g-pos-rel g-top-minus-5 ml-2 icon-media-119 u-line-icon-pro"></i>
                 </div>
 
@@ -193,7 +198,7 @@
                      data-paddingleft="[0,0,0,0]"
 
                      style="z-index: 8; white-space: nowrap; font-weight: 400; color: rgba(255, 255, 255, 1.00);border-width:0px;">
-                     Creative freedom matters user experience.<br>We minimize the gap between technology and its audience.
+                     
                 </div>
 
                 <!-- LAYER NR. 3 -->
@@ -313,7 +318,7 @@
 
                      style="z-index: 6; white-space: nowrap; color: rgba(255, 255, 255, 1.00);border-top: 2px solid #fff; border-bottom: 2px solid #fff;">
                      <i class="g-hidden-sm-down g-font-size-20 g-pos-rel g-top-minus-5 mr-2 icon-media-119 u-line-icon-pro"></i>
-                     DEDICATED ADVANCED TEAM
+                     Freelance Web Developer
                      <i class="g-hidden-sm-down g-font-size-20 g-pos-rel g-top-minus-5 ml-2 icon-media-119 u-line-icon-pro"></i>
                 </div>
 
@@ -339,7 +344,7 @@
                      data-paddingleft="[0,0,0,0]"
 
                      style="z-index: 8; white-space: nowrap; font-weight: 400; color: rgba(255, 255, 255, 1.00);border-width:0px;">
-                     We are creative technology company providing<br>key digital services on web and mobile.
+                     Thoughtfully designed websites<br>customized for your specific needs.
                 </div>
 
                 <!-- LAYER NR. 3 -->
@@ -459,7 +464,7 @@
 
                      style="z-index: 6; white-space: nowrap; color: rgba(255, 255, 255, 1.00);border-top: 2px solid #fff; border-bottom: 2px solid #fff;">
                      <i class="g-hidden-sm-down g-font-size-20 g-pos-rel g-top-minus-5 mr-2 icon-media-119 u-line-icon-pro"></i>
-                     WE DO THINGS DIFFERENTLY
+                     Feel free to ask me any questions!
                      <i class="g-hidden-sm-down g-font-size-20 g-pos-rel g-top-minus-5 ml-2 icon-media-119 u-line-icon-pro"></i>
                 </div>
 
@@ -485,7 +490,7 @@
                      data-paddingleft="[0,0,0,0]"
 
                      style="z-index: 8; white-space: nowrap; font-weight: 400; color: rgba(255, 255, 255, 1.00);border-width:0px;">
-                     Creative freedom matters user experience.<br>We minimize the gap between technology and its audience.
+                     I'm always happy to talk so feel<br>free to send me an email or reachout via LinkedIn.
                 </div>
 
                 <!-- LAYER NR. 3 -->
