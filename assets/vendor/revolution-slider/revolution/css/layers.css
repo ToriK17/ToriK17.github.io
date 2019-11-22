@@ -2554,7 +2554,7 @@ website:   	http://www.themepunch.com
 }
 .tp-caption.BigBold-SubTitle,
 .BigBold-SubTitle {
-    color: rgba(255, 255, 255, 0.50);
+    color: rgba(255, 255, 255, 0.85);
     font-size: 15px;
     line-height: 24px;
     font-weight: 500;
